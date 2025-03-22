@@ -34,7 +34,7 @@ export default function App() {
     setIsLoading(true);
     const { currentPage, itemPerPage } = pagination;
     const start = currentPage * itemPerPage;
-    const end = start + itemPerPage + 1;
+    const end = start + itemPerPage;
     const result = await promise();
 
     const data = result.slice(start, end);

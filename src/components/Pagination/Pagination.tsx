@@ -13,7 +13,7 @@ type PaginationProps = {
   ) => void;
 };
 
-const pageSelector: number[] = [5, 10, 20, 25];
+const pageSelector: number[] = [5, 10, 20, 25, 50, 100];
 const MAX_ELEMENT_PAGE: number = 7;
 
 const Pagination: React.FC<PaginationProps> = ({

@@ -28,7 +28,7 @@ body {
   margin: 20px 0;
 }
 
-.content__header{
+.content__header {
   text-align: center;
 }
 .pagination {
@@ -37,18 +37,16 @@ body {
 
   .pagination__item {
     list-style-type: none;
-    padding: 8px 10px;
     margin: 0 5px;
     cursor: pointer;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    &:not(.nav){
-      width: 35px;
-      height: 35px;
-    }
-    &:hover{
+    width: 25px;
+    height: 25px;
+
+    &:hover {
       background-color: rgba(1, 1, 1, 0.1);
     }
     &.active {
@@ -82,7 +80,7 @@ body {
   }
 }
 
-.loading{
+.loading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,11 +94,11 @@ body {
 }
 
 @keyframes spin {
-  from{
-    transform: rotate(0deg)
+  from {
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 @media screen and (min-width: 480px) {
@@ -108,6 +106,12 @@ body {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+  }
+  .pagination
+  .pagination__item {
+    padding: 8px 10px;
+    width: 35px;
+    height: 35px;
   }
 }
 

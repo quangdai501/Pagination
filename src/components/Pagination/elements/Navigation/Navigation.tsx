@@ -9,7 +9,7 @@ const Navigation: React.FC<NavProps> = ({ navigation, navigatePage }) => {
       className="pagination__item nav"
       onClick={() => navigatePage(navigation)}
     >
-      {navigation == "next" ? "Next" : "Previous"}
+      {navigation == "next" ? ">" : "<"}
     </li>
   );
 };

@@ -1,4 +1,4 @@
-const mocks = Array.from({ length: 201 }, (v, i) => i).map((val) => ({
+const mocks = Array.from({ length: 2001 }, (v, i) => i).map((val) => ({
   header: `This is the header ${val + 1}`,
   content: `This is the item ${val + 1}`,
 }));
